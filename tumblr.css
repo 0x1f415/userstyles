@@ -1,0 +1,176 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://www.tumblr.com/dashboard"), url-prefix("https://www.tumblr.com/reblog") {
+	:root {
+		--main-page-bg-color: #101010 !important;
+	
+		--main-page-text-color: #FFFFFF;
+		--main-page-text-color-two: #FF9500;
+		--main-page-text-invert-color-two: #FFFFFF;
+		--main-page-link-color: #FF9500;
+	
+		--main-border-radius: 0px;
+		--main-page-border-color: rgba(0, 0, 0,.2);
+	
+		--main-font-family: sans-serif;
+	
+		--lighter-color: #333333;
+	}
+	
+	.post-forms-glass {
+		background-color: rgba(16, 16, 16, .95);
+	}
+	
+	.reblog-list-item:not(.contributed-content) .reblog-content {
+		border-left: 2px solid #555;
+		padding: 0 0 0 18px;
+	}
+	
+	.tmblr-full {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	
+	.post,
+	.post_avatar_link,
+	.post_permalink {
+		border-radius: 0 !important;
+	}
+	
+	.post_container {
+		margin: 0 0 20px 0 !important;
+		background-color: unset !important;
+	}
+	
+	body,
+	.l-content,
+	#left_column,
+	#right_column,
+	.l-header-container--refresh,
+	.post-avatar--sticky {
+		background-color: var(--main-page-bg-color) !important;
+	}
+	
+	#left_column {
+		position: relative;
+		left: 120px;
+	}
+	
+	.identity .right_column::after,
+	#sidebar_footer_nav,
+	.post_tags::after,
+	#new_post_notice_container,
+	span[title="Make a post"],
+	.controls_section_radar,
+	#tumblr_radar,
+	.reblog_follow_button,
+	.share_social_button,
+	.post-control-icon.messaging,
+	.elevator-wrapper,
+	.recommended_tumblelogs,
+	.sidebar_link[href="/explore"] {
+		display: none !important;
+	}
+	
+	.post_permalink {
+		border-color: var(--main-page-bg-color) var(--main-page-bg-color) transparent transparent !important;
+	}
+	
+	.identity .controls_section.user_list li .follow_list_item_blog::before {
+		background-image: none !important;
+		border-right: none !important;
+	}
+	
+	.plus-follow-button {
+		color: var(--main-page-bg-color);
+	}
+	
+	.post {
+		background-color: rgba(255, 255, 255, 0.05) !important;;
+	}
+	
+	.post_full .post_header .post_info .post_info_link:first-child,
+	.reblog-header .reblog-tumblelog-name {
+		color: #e4e4e4 !important;
+	}
+	
+	.post .post-source-footer,
+	.post_tags,
+	.post_wrapper {
+		background: unset;
+		background-color: unset;
+	}
+	
+	.reblog-list-item .reblog-content,
+	.post_body,
+	.reblog-content a,
+	.post_body a,
+	ul.conversation_lines .chat_line,
+	.reblog-title,
+	.post_title {
+		color: #a2a2a2 !important;
+	}
+	
+	.reblog-list,
+	.reblog-list-item {
+		border-color: #555 !important;
+	}
+	
+	ul.conversation_lines .chat_line:nth-child(2n) {
+		background-color: unset !important;
+	}
+	
+	.xkit-interface-control-button::after {
+		filter: invert(100%);
+		opacity: 0.6 !important;
+	}
+	
+	.note_item {
+		border-color: #555 !important;
+		background-color: unset !important;
+	}
+	
+	.note_item .nipple {
+		border-left-color: #555 !important;
+	}
+	
+	.reblog-content blockquote {
+		border-left-color: #555 !important;
+	}
+	
+	.post_full.is_link .link-button {
+		background-color: transparent;
+	}
+	
+	.post_full.is_link .link-button .title,
+	.post_full.is_link .link-button .excerpt {
+		color: #a2a2a2 !important;
+	}
+	
+	.post.is_photo .reblog-list,
+	.post.is_photoset .reblog-list {
+		border-top-width: 0 !important;
+	}
+	
+	ol#posts {
+		position: relative;
+		top: -20px;
+	}
+	
+	#new_post {
+		display: none;
+	}
+	
+	.post.is_regular .post_tags {
+		display: inline-block;
+		width: 50%;
+	}
+	
+	.post.is_regular .post-source-footer {
+		display: inline-block !important;
+	}
+	
+	.post.has_source .post_tags.draggable::before {
+		background-image: none !important;
+	}
+}
