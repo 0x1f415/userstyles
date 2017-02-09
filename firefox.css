@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url('about:newtab'), url('about:blank') {
+	html {
+		background-color: #101010;
+	}
+	body {
+		display: none;
+	}
+}
