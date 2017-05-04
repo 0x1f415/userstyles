@@ -68,6 +68,7 @@
 	.post-control-icon.messaging,
 	.elevator-wrapper,
 	.recommended_tumblelogs,
+	.notification.single_notification.alt.takeover-container,
 	.sidebar_link[href="/explore"] {
 		display: none !important;
 	}
