@@ -1,0 +1,13 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://mastodon.social/web/") {
+	.column, .drawer {
+		flex: 1 1 auto;
+		max-width: none;
+	}
+
+	.static-content.getting-started {
+		padding-bottom: unset;
+		background: none;
+	}
+}
